@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+websockets
+kafka-python
+streamlit
+pandas
+requests
+aiokafka
