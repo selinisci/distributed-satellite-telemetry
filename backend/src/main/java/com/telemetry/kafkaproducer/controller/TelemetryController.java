@@ -18,7 +18,6 @@ public class TelemetryController {
         this.telemetryService = telemetryService;
     }
 
-    // Endpoint to retrieve historical data for the dashboard
     @GetMapping("/history/{satelliteId}")
     public ResponseEntity<?> getHistoricalData(@PathVariable String satelliteID) {
         try {

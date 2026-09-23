@@ -20,7 +20,7 @@ async def consume_telemetry(websocket: WebSocket):
     await consumer.start()
     try:
         async for msg in consumer:
-            # Send the actual Kafka message to the Streamlit frontend
+            
             await websocket.send_json(msg.value)
     finally:
         await consumer.stop()
